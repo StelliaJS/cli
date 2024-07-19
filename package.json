@@ -1,0 +1,12 @@
+{
+  "name": "@stelliajs/stellia-cli",
+  "version": "0.0.0",
+  "main": "",
+  "author": "Tweenty_",
+  "license": "ISC",
+  "description": "CLI for StelliaJS framework",
+  "devDependencies": {
+    "@types/node": "^20.14.11"
+  },
+  "type": "module"
+}
