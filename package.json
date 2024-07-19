@@ -2,9 +2,14 @@
   "name": "@stelliajs/stellia-cli",
   "version": "0.0.0",
   "main": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stelliajs/cli.git"
+  },
   "author": "Tweenty_",
   "license": "ISC",
   "description": "CLI for StelliaJS framework",
+  "keywords": ["discord", "bot", "discordjs", "typescript", "framework", "stelliajs"],
   "devDependencies": {
     "@types/node": "^20.14.11"
   },
