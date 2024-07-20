@@ -7,7 +7,7 @@
     "url": "https://github.com/stelliajs/cli.git"
   },
   "bin": {
-    "stellia": "./src/cli/create-stellia-app.js"
+    "stellia": "./src/cli/handleCommand.js"
   },
   "author": "Tweenty_",
   "license": "ISC",
