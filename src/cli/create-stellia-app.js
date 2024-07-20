@@ -24,7 +24,7 @@ async function createStelliaApp() {
         process.exit(1);
     }
     const projectRootDirectory = path.dirname(packageJsonPath);
-    cpSync(templateDirectory, projectRootDirectory + "/src", { recursive: true });
+    cpSync(templateDirectory, projectRootDirectory, { recursive: true });
 
     console.log("Project successfully created! 🚀");
 }
