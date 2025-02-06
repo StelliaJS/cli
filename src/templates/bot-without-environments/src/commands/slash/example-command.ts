@@ -18,7 +18,7 @@ export default {
                 .setDescription("Auto complete option")
                 .setAutocomplete(true),
         ),
-    async execute(client: StelliaClient, interaction: ChatInputCommandInteraction<"cached">) {
+    async execute(client: StelliaClient<true>, interaction: ChatInputCommandInteraction<"cached">) {
         const autocomplete = interaction.options.getString("autocomplete");
         if (autocomplete) {
             return ephemeralFollowUpResponse(interaction, `Autocomplete : ${autocomplete}`);

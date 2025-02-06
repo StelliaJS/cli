@@ -1,6 +1,6 @@
 {
   "name": "@stelliajs/cli",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "",
   "repository": {
     "type": "git",
@@ -18,7 +18,7 @@
     "find-up": "^7.0.0"
   },
   "devDependencies": {
-    "@types/node": "^20.14.11"
+    "@types/node": "^22.13.1"
   },
   "type": "module"
 }
