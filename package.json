@@ -1,16 +1,13 @@
 {
   "name": "@stelliajs/cli",
-  "version": "0.0.2-dev-1",
+  "version": "0.0.2-dev-2",
   "main": "",
-  "scripts": {
-    "build": "tsc && tsc-alias"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/stelliajs/cli.git"
   },
   "bin": {
-    "stellia": "dist/cli/create-stellia-app.js"
+    "stellia": "./src/cli/create-stellia-app.ts"
   },
   "author": "Tweenty_",
   "license": "ISC",
