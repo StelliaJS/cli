@@ -19,9 +19,6 @@
       ],
       "@interactions/*": [
         "./src/interactions/*"
-      ],
-      "@json/*": [
-        "./src/json/*"
       ]
     }
   },

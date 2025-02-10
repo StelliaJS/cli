@@ -1,0 +1,12 @@
+{
+  "environments": {
+    "development": {
+      "production": false,
+      "file": "src/environments/environment.development.ts"
+    },
+    "production": {
+      "production": true,
+      "file": "src/environments/environment.ts"
+    }
+  }
+}

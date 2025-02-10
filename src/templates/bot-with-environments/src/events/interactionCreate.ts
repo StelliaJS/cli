@@ -8,7 +8,6 @@ export default {
     },
     async execute(client: StelliaClient<true>, interaction: Interaction) {
         if (interaction.inCachedGuild()) {
-            console.log(client.user.tag, "received an interaction")
             await client.handleInteraction(interaction);
         }
     }

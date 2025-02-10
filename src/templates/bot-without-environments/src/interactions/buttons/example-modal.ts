@@ -1,5 +1,5 @@
 import { ActionRowBuilder, type ButtonInteraction, ModalBuilder, TextInputBuilder, TextInputStyle } from "discord.js";
-import { ButtonStructure, type StelliaClient } from "@stelliajs/framework";
+import { type ButtonStructure, type StelliaClient } from "@stelliajs/framework";
 
 export default {
     data: {

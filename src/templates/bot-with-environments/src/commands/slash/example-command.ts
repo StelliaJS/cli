@@ -7,6 +7,7 @@ import {
     SlashCommandBuilder,
     StringSelectMenuBuilder
 } from "discord.js";
+import { type CustomEnvironment } from "@environments/environment.model.js";
 
 export default {
     data: new SlashCommandBuilder()
@@ -18,7 +19,7 @@ export default {
                 .setDescription("Auto complete option")
                 .setAutocomplete(true),
         ),
-    async execute(client: StelliaClient, interaction: ChatInputCommandInteraction<"cached">) {
+    async execute(client: StelliaClient<true>, environment: CustomEnvironment, interaction: ChatInputCommandInteraction<"cached">) {
         const autocomplete = interaction.options.getString("autocomplete");
         if (autocomplete) {
             return ephemeralFollowUpResponse(interaction, `Autocomplete : ${autocomplete}`);
@@ -50,6 +51,10 @@ export default {
                 .setCustomId("modalExample")
                 .setLabel("Example Modal")
                 .setStyle(ButtonStyle.Danger),
+            new ButtonBuilder()
+                .setCustomId("buttonEnvironment")
+                .setLabel("Display environment")
+                .setStyle(ButtonStyle.Success),
         );
 
         return ephemeralFollowUpResponse(interaction, { content: "Example components", components: [rowSelectMenu, rowButtons] });

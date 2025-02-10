@@ -1,0 +1,25 @@
+{
+  "name": "my-bot",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc && tsc-alias",
+    "dev": "cd ./src && npx tsx --watch ./index.ts --config=development",
+    "start": "cd ./dist && node ./index.js --config=production"
+  },
+  "author": "Your Name",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@stelliajs/framework": "^1.2.0",
+    "discord-api-types": "^0.37.119",
+    "discord.js": "^14.17.3",
+    "dotenv": "^16.4.7"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "tsc-alias": "^1.8.10",
+    "tsx": "^4.19.2"
+  },
+  "type": "module"
+}
