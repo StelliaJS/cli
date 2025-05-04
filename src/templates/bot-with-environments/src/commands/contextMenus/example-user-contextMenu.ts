@@ -10,4 +10,4 @@ export default {
     async execute(client: StelliaClient<true>, environment: CustomEnvironment, interaction: UserContextMenuCommandInteraction<"cached">) {
         await ephemeralFollowUpResponse(interaction, "User context menu interaction");
     }
-} as ContextMenuStructure;
+} satisfies ContextMenuStructure;

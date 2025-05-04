@@ -21,4 +21,4 @@ export default {
 
         await interaction.showModal(modal);
     },
-} as ButtonStructure;
+} satisfies ButtonStructure;

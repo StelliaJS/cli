@@ -16,4 +16,4 @@ export default {
 
         await interaction.respond(commandsOptions);
     }
-} as AutoCompleteStructure;
+} satisfies AutoCompleteStructure;

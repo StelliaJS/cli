@@ -11,4 +11,4 @@ export default {
         const field = interaction.fields.getField("field");
         await ephemeralFollowUpResponse(interaction, `Field value: ${field.value}`);
     }
-} as ModalStructure;
+} satisfies ModalStructure;

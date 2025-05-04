@@ -59,4 +59,4 @@ export default {
 
         return ephemeralFollowUpResponse(interaction, { content: "Example components", components: [rowSelectMenu, rowButtons] });
     }
-} as CommandStructure;
+} satisfies CommandStructure;

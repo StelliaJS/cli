@@ -11,15 +11,16 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "@stelliajs/framework": "^1.2.0",
-    "discord-api-types": "^0.37.119",
-    "discord.js": "^14.17.3",
+    "@stelliajs/framework": "^1.2.3",
+    "discord-api-types": "^0.38.2",
+    "discord.js": "^14.19.3",
     "dotenv": "^16.4.7"
   },
   "devDependencies": {
     "ts-node": "^10.9.2",
-    "tsc-alias": "^1.8.10",
-    "tsx": "^4.19.2"
+    "tsc-alias": "^1.8.15",
+    "tsx": "^4.19.4"
   },
-  "type": "module"
+  "type": "module",
+  "packageManager": "pnpm@10.10.0"
 }

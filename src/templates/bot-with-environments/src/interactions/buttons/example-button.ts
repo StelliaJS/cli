@@ -10,4 +10,4 @@ export default {
     async execute(client: StelliaClient<true>, environment: CustomEnvironment, interaction: ButtonInteraction<"cached">) {
         await ephemeralFollowUpResponse(interaction, "Button clicked");
     }
-} as ButtonStructure;
+} satisfies ButtonStructure;

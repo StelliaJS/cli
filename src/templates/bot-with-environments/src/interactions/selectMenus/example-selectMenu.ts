@@ -11,4 +11,4 @@ export default {
         const value = interaction.values[0];
         await ephemeralFollowUpResponse(interaction, `SelectMenu value: ${value}`);
     }
-} as SelectMenuStructure;
+} satisfies SelectMenuStructure;

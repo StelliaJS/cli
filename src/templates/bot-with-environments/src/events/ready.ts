@@ -10,4 +10,4 @@ export default {
         console.log(`Logged in as ${client.user.tag}`);
         await client.initializeCommands();
     }
-} as EventStructure;
+} satisfies EventStructure;
