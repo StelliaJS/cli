@@ -1,13 +1,13 @@
 import { ActionRowBuilder, type ButtonInteraction, ModalBuilder, TextInputBuilder, TextInputStyle } from "discord.js";
 import { type ButtonStructure, type StelliaClient } from "@stelliajs/framework";
-import { type CustomEnvironment } from "@environments/environment.model.js";
+import { type CustomGuildConfiguration } from "@environments/environment.model.js";
 
 export default {
     data: {
         name: "modalExample",
         once: false,
     },
-    async execute(client: StelliaClient<true>, environment: CustomEnvironment, interaction: ButtonInteraction<"cached">) {
+    async execute(client: StelliaClient<true>, guildConfiguration: CustomGuildConfiguration, interaction: ButtonInteraction<"cached">) {
         const modal = new ModalBuilder()
             .setCustomId("example-form")
             .setTitle("Form");

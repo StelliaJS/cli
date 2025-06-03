@@ -1,4 +1,4 @@
-import { type StelliaClient, type EventStructure } from "@stelliajs/framework";
+import { type StelliaClient, type EventStructure, type GuildsConfiguration, logger } from "@stelliajs/framework";
 import { Events } from "discord.js";
 
 export default {
@@ -6,8 +6,8 @@ export default {
         name: Events.ClientReady,
         once: true
     },
-    async execute(client: StelliaClient<true>) {
-        console.log(`Logged in as ${client.user.tag}`);
+    async execute(client: StelliaClient<true>, guildsConfiguration: GuildsConfiguration) {
+        logger.info(`Client ready and logged in as ${client.user.tag}`);
         await client.initializeCommands();
     }
 } satisfies EventStructure;

@@ -10,9 +10,13 @@ const client = new StelliaClient({
         GatewayIntentBits.Guilds,
         GatewayIntentBits.GuildMessages,
         GatewayIntentBits.MessageContent,
-        GatewayIntentBits.GuildMembers
+        GatewayIntentBits.GuildMembers,
     ],
-    partials: [Partials.Message, Partials.GuildMember]
+    partials: [
+        Partials.Channel,
+        Partials.GuildMember,
+        Partials.Message
+    ]
 }, {
     managers: {
         autoCompletes: {
@@ -38,7 +42,7 @@ const client = new StelliaClient({
         }
     },
     environment: {
-        areEnvironmentsEnabled: true
+        areGuildsConfigurationEnabled: true
     }
 });
 

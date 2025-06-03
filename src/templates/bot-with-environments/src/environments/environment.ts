@@ -1,5 +1,13 @@
-import { type CustomEnvironment } from "@environments/environment.model.js";
+import { type CustomGuildsConfiguration } from "@environments/environment.model.js";
 
 export const environment = {
-    hello: "Hello, World! - Production"
-} satisfies CustomEnvironment;
+    general: {
+        prefix: "!",
+    },
+    guilds: {
+        "1034237685168091278": {
+            voiceChannelId: "erez",
+            locale: "en",
+        }
+    }
+} satisfies CustomGuildsConfiguration;
